@@ -1,11 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const TerserPlugin = require("terser-webpack-plugin");
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
- mode: "development",
- entry: './src/main.ts',
- output: {
+  mode: 'development',
+  entry: './src/main.ts',
+  output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'prod'),
   },
@@ -13,29 +13,29 @@ module.exports = {
     minimize: true,
     minimizer: [new TerserPlugin()],
   },
- module: {
-   rules: [
-     {
-       test: /\.ts?$/,
-       use: ['babel-loader', 'ts-loader'],
-       exclude: /node_modules/,
-     },
-     {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+  module: {
+    rules: [
+      {
+        test: /\.ts?$/,
+        use: ['babel-loader', 'ts-loader'],
+        exclude: /node_modules/,
       },
-   ],
- },
- resolve: {
-   extensions: ['*', '.tsx', '.ts', '.js'],
- },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
+  resolve: {
+    extensions: ['*', '.tsx', '.ts', '.js'],
+  },
 
- plugins: [
+  plugins: [
     new HtmlWebpackPlugin({
-      template: "./public/index.html",
-      filename: "index.html",
-      inject: "body",
-})]
-    
- 
+      title: 'Production',
+      template: './public/index.html',
+      filename: 'index.html',
+      inject: 'body',
+    })],
+
 };
