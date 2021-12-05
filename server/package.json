@@ -10,7 +10,7 @@
     "prod": "tsc && node ./dist/server.js",
     "node": "ts-node server.ts",
     "lint": "npx eslint .",
-    "lint-fix": "npx eslint . --fix"
+    "lint-fix": "npx eslint ./src/ --fix"
   },
   "keywords": [],
   "author": "",
