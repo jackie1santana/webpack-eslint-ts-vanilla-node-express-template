@@ -1,1 +1,0 @@
-- downgrade css name to "cssnano": "^4.1.11", in order to fix css bundle bug
