@@ -9,7 +9,7 @@
     "build-prod": "webpack --config webpack.config.prod.js",
     "prod-server": "webpack serve --open --config webpack.config.prod.js",
     "lint": "npx eslint .",
-    "lint-fix": "npx eslint . --fix"
+    "lint-fix": "npx eslint ./src/ --fix"
   },
   "keywords": [],
   "author": "",
