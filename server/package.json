@@ -8,7 +8,7 @@
     "tsc": "tsc",
     "dev": "(tsc --watch) & ts-node-dev --respawn --transpile-only ./src/server.ts",
     "prod": "tsc && node ./dist/server.js",
-    "node": "ts-node server.ts",
+    "node": "ts-node ./src/server.ts",
     "lint": "npx eslint .",
     "lint-fix": "npx eslint ./src/ --fix"
   },
