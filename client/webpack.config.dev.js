@@ -33,7 +33,8 @@ module.exports = {
       filename: 'index.html',
       inject: 'body',
     }),
-    new dotEnv()],
+    new dotEnv(),
+  ],
 
   devServer: {
     open: true,
@@ -42,5 +43,4 @@ module.exports = {
     hot: true,
   },
   devtool: 'inline-source-map',
-
 };
