@@ -24,5 +24,6 @@ module.exports = {
     'import/extensions': 'off',
     'no-console': 'off',
     'object-curly-newline': 'off',
+    'no-debugger': 'off',
   },
 };
