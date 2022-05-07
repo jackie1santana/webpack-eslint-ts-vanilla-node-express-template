@@ -27,5 +27,10 @@ module.exports = {
     'eol-last': 'off',
     semi: 0,
     indent: 'off',
+     'no-void': 'off',
+    'no-useless-return': 'off',
+    'no-trailing-spaces': 'off',
+    'no-shadow': 'off',
+    '@typescript-eslint/no-unused-vars': 'warn',
   },
 };
